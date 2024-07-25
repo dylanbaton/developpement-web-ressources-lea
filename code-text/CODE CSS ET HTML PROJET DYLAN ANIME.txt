@@ -1,0 +1,139 @@
+CODE CSS PROJET DYLAN ANIME 
+
+.videos-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin: 100px 0 200px;
+    scroll-margin-top: 100px;
+}
+  
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 40px;
+}
+  
+  .videos {
+    background: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .manga-videos {
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  .manga-videos iframe {
+    transition: transform 0.1s;
+  
+    display: block;
+    width: 100%;
+    aspect-ratio: 280/415;
+    object-fit: cover;
+  }
+  
+  .videos:hover .manga-videos iframe {
+    transform: scale(1.01);
+  }
+  
+  .videos-description {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .videos-description h3 {
+    margin: 0;
+  }
+
+CODE HTML PROJET DYLAN ANIME
+
+ <div id="videos-section" class="videos-section">
+        <div class="container">
+        <h2>Animés</h2>
+        <div class="videos-container">
+            <div class="videos">
+            <div class="manga-videos">
+              <iframe width="600" height="400" src="https://www.youtube.com/embed/MoxtMOsZfGc" frameborder="0"></iframe>
+          </div>
+          <div class="videos-description">
+            <h3>NARUTO</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/image-one-piece-1.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>ONE PIECE</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/image-one-punch-man.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>ONE PUNCH MAN</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/image-jujutsu-kaisen.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>JUJUTSU KAISEN</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/image-gto.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>GTO</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/seven-deadly-sins.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>SEVEN DEADLY SINS</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/image-fairy-tail.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>FAIRY TAIL</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/image-demon-slayer-1.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>DEMON SLAYER</h3>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="manga-videos">
+            <img src="images/manga/image-dragon-ball.jpg" alt="">
+          </div>
+          <div class="comic-description">
+            <h3>DRAGON BALL</h3>
+          </div>
+        </div>
+        <div class="videos">
+            <div class="manga-videos">
+              <img src="images/manga/image-hunter-x-hunter.jpg" alt="">
+            </div>
+            <div class="comic-description">
+              <h3>HUNTER X HUNTER</h3>
+      </div>
+    </div>
+  </div>

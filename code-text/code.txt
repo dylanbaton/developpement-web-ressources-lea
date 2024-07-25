@@ -1,0 +1,9 @@
+<h1>
+   <div class="top-title">
+        <span class="text-the">the</span>
+        <span class="text-amazing">amazing</span>
+    </div>
+    <div class="bottom-title">
+        <span class="text-spider-man">spider-man</span>
+    </div>
+</h1>

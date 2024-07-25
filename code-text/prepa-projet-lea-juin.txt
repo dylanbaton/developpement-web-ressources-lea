@@ -1,0 +1,86 @@
+PAGE D'ACCUEIL :
+
+- Hero-header : prénom + nom, menu
+- Sections présentation : texte + photo
+- Sections compétences
+- Sections expériences / diplomes
+- Section projets
+- Footer
+
+ADMINISTRATION / GESTION DU SITE 
+
+Pour les contenus Projet, Article :
+
+- Lister : Faute une requête select et affiche la liste des contenus avec un lien de modification
+et un lien de suppression.
+
+- Ajouter : Afficher un formulaire de saisi enregistrer les données en bdd à la validation.
+Puis faire une redirection vers la liste.
+
+- Modification : L'élément correspondant à l'id en GET et le mettre dans le formulaire.
+
+- Supprimer : Supprimer l'élément correspondant à l'id en GET et redirection vers la page de liste.
+
+Pour contact :
+- Lister
+- Detail
+
+CONTACT : 
+
+- Nom / Prénom
+- Entreprise
+- Mail
+- Message
+
+ARBORESCENSE DES FICHIERS / DOSSIERS : 
+
+- Mon projet >
+
+   - index.php : page d'accueil
+   - realisations.php : liste des réalistaions
+   - realisation-detail.php?id=9 : affiche le détail d'une réalisation
+   - mon-cv.php : affiche le détail du CV mis en forme
+   - contact.php : formulaire + coordonnées
+   - documentation : 
+      - Cahier des charges du projet
+      - Etapes de conception
+      - Benshmark 
+      - Arborescense détaillée
+      - Mes zonings :
+	   - Accueil
+	   - Réalisations
+	   - Réalisation détail
+	   - Contact
+      - Plan de la base 
+   - images >
+      - visuel-accueil.php
+      - ...
+   - css >
+      - reset.css
+      - interface.css
+      - accueil.css
+      - ...
+   - js >
+      - bibliothèque ?
+      - scripts.js : JS custom ?
+
+   - favicon.ico
+   - readme.md
+   - 
+
+   - Administration >
+
+     - Index.php : liste des contacts / messages + lien détaim du message
+
+     - realisation-liste.php : affiche la liste des réalisations avec lien de modification + suppression.
+
+     - realisation-ajout.php : formulaire d'ajout puis enregistrement en bdd.
+
+     - realisation-modifier.php : même formulaire que ajout + affichage des données dedans (récupérer en variables GET).
+
+     - realisation-suppression.php : récupère l'id en variables GET, supprimer la réalisation correspondante et rediriger vers la liste des réalisations
+
+     - contacts-liste.php : récupère l'id en GET, charge le message et l'affiche.
+
+
+     

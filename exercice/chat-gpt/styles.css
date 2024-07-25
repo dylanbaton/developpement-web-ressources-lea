@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 270px;
+    height: 270px;
+    transition: filter 2s;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .credit {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .freepik {
+    text-decoration: underline;
+  }
+  
+  .learn-more {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .learn-more:hover {
+    opacity: 0.8;
+  }

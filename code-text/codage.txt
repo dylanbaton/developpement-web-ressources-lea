@@ -1,0 +1,63 @@
+id
+
+nom_prenom
+
+email
+
+telephone
+
+message
+
+
+
+
+
+prepa-lea-2024-portfolio-dylan-baton
+
+if(empty($_POST)){
+    echo 'le formulaire n\'a pas été soumis correctement';
+    exit();
+} else {
+    $nom_prenom = mysqli_real_escape_string($connexion, $_POST['nom_prenom']);
+    $email = mysqli_real_escape_string($connexion, $_POST['email']);
+    $telephone = mysqli_real_escape_string($connexion, $_POST['telephone']);
+    $message = mysqli_real_escape_string($connexion, $_POST['message']);
+    
+    $sql= "INSERT INTO visiteurs( nom_prenom, email, telephone, message) VALUES ('$nom_prenom','$email','$telephone', '$message')";
+    mysqli_query($connexion, $sql);
+}
+
+
+
+
+<?php
+// Paramètres de connexion
+$serveur = "localhost";
+$utilisateur = "root";
+$mot_de_passe = "";
+$base_de_donnees = "prepa-lea-2024-portfolio-dylan-baton";
+// Établir la connexion
+$connexion = mysqli_connect($serveur, $utilisateur,
+$mot_de_passe, $base_de_donnees);
+// Vérifier la connexion
+if (!$connexion) {
+die("Échec de la connexion : " . mysqli_connect_error());
+} else {
+echo "Connexion réussie à la base de données.";
+}
+
+if(empty($_POST)){
+    echo 'le formulaire n\'a pas été soumis correctement';
+    exit();
+} else {
+    $nom_prenom = mysqli_real_escape_string($connexion, $_POST['nom_prenom']);
+    $email = mysqli_real_escape_string($connexion, $_POST['email']);
+    $telephone = mysqli_real_escape_string($connexion, $_POST['telephone']);
+    $message = mysqli_real_escape_string($connexion, $_POST['message']);
+    
+    $sql= "INSERT INTO contact( nom_prenom, email, telephone, message) VALUES ('$nom_prenom','$email','$telephone', '$message')";
+    mysqli_query($connexion, $sql);
+}
+
+header("Location: index.html");
+?>

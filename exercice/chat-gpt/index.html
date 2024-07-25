@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="image/voiture-vitrine.jpg" alt="Image 1">
+      <img src="image/voiture-vitrine.jpg" alt="Image 2">
+      <img src="image/voiture-vitrine.jpg" alt="Image 3">
+      <img src="image/voiture-vitrine.jpg" alt="Image 4">
+      <img src="image/voiture-vitrine.jpg" alt="Image 5">
+      <img src="image/voiture-vitrine.jpg" alt="Image 6">
+      <img src="image/voiture-vitrine.jpg" alt="Image 7">
+      <img src="image/voiture-vitrine.jpg" alt="Image 8">
+      <img src="image/voiture-vitrine.jpg" alt="Image 9">
+    </div>
+    <div class="button-container">
+      <p class="credit">Image From <span class="freepik">Freepik</span></p>
+      <button id="blurButton" class="learn-more">Learn More</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("blurButton").addEventListener("click", function() {
+      var images = document.querySelectorAll(".image-container img");
+      images.forEach(function(image) {
+        image.style.filter = "blur(5px)";
+      });
+      setTimeout(function() {
+        images.forEach(function(image) {
+          image.style.filter = "none";
+        });
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>

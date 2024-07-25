@@ -1,0 +1,12 @@
+// <?php
+
+// $user = array(
+//     'marque'  => "ford",
+//     'modele' => "mustang",
+//     'couleur' => "rouge",
+//     'annee' => "1969",
+// );
+
+// echo "J'ai une". " " . $user['marque'] . " " . $user['modele'] . " " . $user['couleur'] . " " . "de" . " " . $user['annee'] ." ";
+
+// echo "jai une $user[marque] $user[modele] $user[couleur] de $user[modele]";

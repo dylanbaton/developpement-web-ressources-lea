@@ -1,0 +1,10 @@
+Enregistrer les requêtes (SELECT * FROM produit;)
+Sélectionner les requetes nom (SELECT nom FROM produit;)
+Sélectionner les requetes nom, prix (SELECT nom, prix FROM produit;)
+Sélectionner les enregistrements produits infèrieur a 30 euros (SELECT * FROM produit WHERE prix < 30;)
+Sélectionner les produits ordre croissant (SELECT * FROM produit ORDER BY prix ASC;)
+Compter nombre total produits disponibles (SELECT COUNT(*) FROM `produit`;)
+Calcule le prix total des produits catalogue (SELECT SUM(prix) AS prix_total FROM produit;)
+limiter le nombre de produits a 3 (SELECT * FROM produit LIMIT 3;)
+Afficher prix par 3 ordre croissant (SELECT * FROM produit ORDER BY prix ASC LIMIT 3;)
+

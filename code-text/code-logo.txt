@@ -1,0 +1,8 @@
+.logo-1 {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    width: 5%;
+    height: 25%;
+    object-fit: cover;
+}

@@ -1,0 +1,76 @@
+progial synapsy
+
+https://www.jdc.fr/nos-services
+
+
+
+
+
+.content {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 10%;
+    opacity: 0.90;
+    gap: 15px;
+}
+
+.titre-block {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.formulaire label {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.formulaire input,
+.formulaire textarea {
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulaire button {
+    padding: 10px;
+    margin-bottom: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.formulaire button:hover {
+    background-color: #555;
+}
+
+.contact {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    opacity: 0.90;
+    gap: 5px;
+    text-transform: uppercase;
+
+}

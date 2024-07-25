@@ -1,0 +1,17 @@
+section {
+    display: flex;
+    height: 400px;
+}
+
+img {
+    box-sizing: content-box;
+    width: 60%;
+    height: 100%;
+}
+
+p {
+    white-space: pre-wrap;
+    border: solid;
+    background-color: pink;
+    width: 60%;
+}

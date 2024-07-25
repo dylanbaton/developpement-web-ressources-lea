@@ -1,0 +1,14 @@
+<div class="image-ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-1.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-2.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-3.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-4.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-5.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-6.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-7.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-8.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-9.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/lb-ferrari-10.jpg" alt="ferrari">
+                        <img src="images/liberty-work/ferrari/logo-ferrari.jpg" alt="ferrari">
+                         <iframe width="550" height="350" src="https://www.youtube.com/embed/Xaa1jb5uvEg" title="【LIBERTY WAIK TOKYO HARAJUKU OPEN】TOKYO CUSTOM LB-F40&amp;FD3S  Promotion Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>

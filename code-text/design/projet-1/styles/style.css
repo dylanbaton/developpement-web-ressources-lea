@@ -1,0 +1,105 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    background: white;
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 31px;
+}
+
+.parfum {
+    width: 325px;
+    height: 500px;
+    border-radius: 10px 0px 0px 10px;  
+}
+
+h3 {
+    font-family: montserrat;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h1 { 
+    font-family: fraunces;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    
+    font-size: 14px;
+    font-family: montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;  
+}
+
+.price1 {
+    font-family: fraunces;
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);   
+}
+
+.price2 {
+    text-decoration: line-through;
+    color:  hsl(228, 12%, 48%);
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.bouton {
+    background-color: hsl(158, 36%, 37%);
+    width: 255px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: montserrat;
+    color: white;
+    border-width: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+} 
+
+.bouton:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

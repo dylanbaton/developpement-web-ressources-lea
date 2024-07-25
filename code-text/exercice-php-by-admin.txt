@@ -1,0 +1,174 @@
+.EX.1: 
+
+Contexte :
+
+Vous avez deux tables dans une base de données d'une école, etudiant et classe.
+
+La table Etudiants contient les colonnes id_etudiant, nom et id_classe, tandis que la table Classes contient les colonnes id_classe et nom_classe.
+
+Objectif :
+
+Rédigez une requête SQL utilisant INNER JOIN pour afficher le nom de chaque étudiant avec le nom de sa classe.
+
+Tables :
+
+* etudiant (id_etudiant, nom, id_classe)
+* classe (id_classe, nom_classe)
+
+SELECT etudiant.nom, classe.nom FROM etudiant 
+INNER JOIN classe 
+ON etudiant.id_classe = classe.id_classe;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.EX.2: 
+
+Contexte :
+
+Dans une base de données de gestion d'un petit café, vous avez deux tables : commande et produit. 
+
+La table Commandes contient les colonnes id_commande, id_produit et quantite, tandis que la table Produits contient quantite, nom_produit et prix.
+
+Objectif :
+
+Écrire une requête SQL utilisant INNER JOIN pour afficher l'ID de chaque commande, le nom du produit commandé, et la quantité.
+
+Tables :
+
+*commande (id_commande, id_produit, quantite)
+*produit (id_produit, nom_produit, prix)
+
+SELECT commande.id_commande, 
+       produit.nom_produit,
+       commande.quantite
+FROM commande 
+INNER JOIN produit
+ON commande.id_produit = produit.id_produit;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.EX.3: 
+
+Contexte :
+
+Une école de musique gère une base de données avec trois tables:
+
+eleve (id_eleve, nom), instrument (id_instrument, nom_instrument) et cours (id_cours, id_eleve, id_instrument, date_cours). Chaque élève peut apprendre plusieurs instruments et a des cours programmés pour chaque instrument.
+
+Objectif :
+
+Rédigez une requête SQL utilisant INNER JOIN pour lister le nom de chaque élève, le nom de l'instrument, et la date du cours, pour tous les cours d'un instrument spécifique, disons "Piano".
+
+Tables :
+
+* eleve (id_eleve, nom)
+* instrument (id_instrument, nom_instrument)
+* cours (id_cours,id_eleve, id_instrument, date_cours)
+
+SELECT * FROM eleve 
+INNER JOIN cours
+ON eleve.id_eleve = cours.id_eleve
+
+INNER JOIN insturment
+ON cours.id_instrument = instrument.id_instrument;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.EX.4: 
+
+Contexte :
+
+Vous travaillez avec une base de données de bibliothèque qui contient deux tables : lecteur (id_lecteur, nom) et emprunt (id_emprunt, id_lecteur, titre_livre, date_emprunt). Non tous les lecteurs ont emprunté un livre.
+
+Objectif :
+
+Rédigez une requête SQL utilisant LEFT JOIN pour afficher le nom de tous les lecteurs et le titre du livre qu'ils ont emprunté, s'ils en ont emprunté un.
+
+Tables :
+
+* lecteur (id_lecteur, nom)
+* emprunt (id_emprunt, id_lecteur, titre_livre, date_emprunt)
+
+SELECT lecteur.nom,
+       emprunt.titre_livre,
+FROM lecteur
+LEFT JOIN emprunt
+ON lecteur.id_lecteur = emprunt.id_lecteur
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.EX.5:
+
+Contexte :
+
+Une entreprise possède deux tables dans sa base de données : employe (id_employe, nom) et departement (id_departement, nom_departement). Chaque employé est associé à un département, mais certains départements n'ont pas d'employés.
+
+Objectif :
+
+Utilisez LEFT JOIN pour afficher le nom de tous les employés et le nom de leur département, y compris les employés qui ne sont pas associés à un département.
+
+Tables :
+
+* employe (id_employe, id_departement, nom)
+* departement (id_departement, nom_departement)
+
+SELECT employe.id_employe,
+       employe.nom,
+       departement.nom_departement,
+FROM employe
+LEFT JOIN departement
+ON employe.id_departement = departement.id_departement;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.EX.6:
+
+Contexte :
+
+Récupérer la liste de tous les départements, y compris ceux sans aucun employé associé.
+
+Objectif :
+
+Utilisez une jointure droite (RIGHT JOIN) pour joindre la table employes à la table departements. Sélectionnez l'ID du département et le nom du département de la table departements, et le nom de l'employé de la table employes.
+
+Tables :
+
+* departement(id_departement, nom_departement)
+* employe (id_employe, nom, id_departement)
+
+
+SELECT departement.id_departement,
+       departement.nom_departement,
+       employe.nom,
+FROM departement
+RIGHT JOIN employe
+ON departement.id_departement = employe.id_departement;
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.EX.7:
+
+Contexte :
+
+Récupérer la liste de tous les départements, y compris ceux sans aucun employé associé.
+
+Objectif :
+
+Afficher tous les employés, y compris ceux sans département attribué, mais uniquement pour ceux dont le nom commence par la lettre 'A'.
+
+Tables :
+
+* departement(id_departement, nom_departement)
+* employe (id_employe, nom, id_departement)
+
+SELECT * FROM departement 
+LEFT JOIN employe LIKE 'A%'
+ON departement.id_departement = employe.id_departement;
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.EX.8: 
+
+Contexte :
+
+Une entreprise gère une base de données avec trois tables: employe (id_employe, nom, id_departement), departement (id_departement, nom_departement, ville) et projet (id_projet, nom_projet, id_employe_responsable)
+
+Objectif :
+
+Récupérer tous les projets, y compris ceux sans employé responsable ou sans département associé, mais uniquement pour les projets de plus de 100 heures.
+
+Tables:
+
+* employe (id_employe, nom, id_departement)
+* departement (id_departement, nom_departement, ville)
+* projet (id_projet, nom_projet, id_employe_responsable, heure)
+
+
+
+
